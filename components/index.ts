@@ -11,8 +11,8 @@ import chokidar from 'chokidar';
 import fs from 'fs';
 import path from 'path';
 
-const docsDir = path.resolve(__dirname, 'docs');
-const pagesDir = path.resolve(__dirname, 'pages');
+const docsDir = path.resolve(__dirname, '../docs');
+const pagesDir = path.resolve(__dirname, '../pages');
 
 // just an extra check
 if (!fs.existsSync(pagesDir)) {
