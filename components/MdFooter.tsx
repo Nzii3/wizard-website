@@ -59,7 +59,8 @@ const MdFooter = () => {
   ];
 
   return (
-    <div className="flex w-full flex-col gap-y-12 bg-[#191A1C] py-[1.875rem] px-4 xl:px-20 mt-8">
+    <div className="absolute bottom-0">
+    <div className="flex w-full flex-col gap-y-12 bg-[#191A1C] py-[1.875rem] px-4 xl:px-20 mt-8 w-full">
       <div className="flex w-full flex-col items-center justify-between gap-y-6 md:items-start lg:flex-row">
         <div className="flex  flex-col gap-y-2 sm:max-w-sm">
           <div className="flex items-center justify-center gap-x-2 md:justify-start">
@@ -129,6 +130,7 @@ const MdFooter = () => {
           © Wizard {new Date().getFullYear()}. All rights reserved.{" "}
         </div>
       </div>
+    </div>
     </div>
   );
 };
