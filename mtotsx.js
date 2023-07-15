@@ -18,34 +18,40 @@ const convertMarkdownToTsx = (markdownFile) => {
   if (path.basename(markdownFile) === 'README.md') {
     return;
   }
-  
+
   const tsxFile = path.resolve(pagesDir, path.basename(markdownFile, '.md') + '.tsx');
   fs.writeFileSync(
     tsxFile,
     `
     import React from 'react';
     import Markdown from 'markdown-to-jsx';
-    import { components } from '../components';
-    const { MdNavbar, MdFooter } = components;
-    
+    import { mdNavbar, mdFooter } from "../components";
+
     const markdown = ${tsxContent};
-    
+
     const Page: React.FC = () => (
       <div className="grid min-h-screen place-content-center gap-4">
-        <Navbar />
+        <mdNavbar />
         <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow">
           <Markdown>{markdown}</Markdown>
         </div>
-        <Footer />
+        <mdFooter />
       </div>
     );
-    
+
     export default Page;
     `
   );
 };
 
-const watcher = chokidar.watch(path.join(docsDir, '*.md'), {
+// handle stuff in start
+fs.readdirSync(docsDir).forEach((file) => {
+  if(path.extname(file) === '.md') {
+    convertMarkdownToTsx(path.join(docsDir, file));
+  }
+});
+
+const watcher = chokidar.watch(docsDir, {
   persistent: true,
   ignoreInitial: false,
   depth: 0,
@@ -53,15 +59,3 @@ const watcher = chokidar.watch(path.join(docsDir, '*.md'), {
 
 watcher.on('add', convertMarkdownToTsx);
 watcher.on('change', convertMarkdownToTsx);
-
-// handle stuff in start
-watcher.on('ready', () => {
-  const watchedPaths = watcher.getWatched();
-
-  Object.keys(watchedPaths).forEach((watchedDir) => {
-    watchedPaths[watchedDir].forEach((file) => {
-      const fullPath = path.join(watchedDir, file);
-      convertMarkdownToTsx(fullPath);
-    });
-  });
-});

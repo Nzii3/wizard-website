@@ -6,7 +6,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
-const Navbar = () => {
+const mdNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -147,5 +147,5 @@ const Stars = () => {
   );
 };
 
-export default Navbar;
+export default mdNavbar;
 export { Stars };

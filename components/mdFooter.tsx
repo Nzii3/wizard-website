@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../public/wizard_standalone.png";
-const Footer = () => {
+const mdFooter = () => {
   const usefulLinks = [
     {
       name: "Invite to Server",
@@ -126,10 +126,10 @@ const Footer = () => {
 
       <div className="flex w-full flex-col justify-between gap-y-2 semimd:flex-row">
         <div className="font-header text-center font-medium md:text-left">
-          © Wizard {new Date().getFullYear()}. All rights reserved.{" "}
+          Â© Wizard {new Date().getFullYear()}. All rights reserved.{" "}
         </div>
       </div>
     </div>
   );
 };
-export default Footer;
+export default mdFooter;
