@@ -32,9 +32,9 @@ const Navbar = () => {
       animate={{
         opacity: 1,
       }}
-      className="flex w-full flex-col "
+      className="flex w-full flex-col sticky top-0 z-50"
     >
-      <div className="flex items-center justify-between px-9 py-6">
+      <div className="flex items-center justify-between px-9 py-6 ">
         <Link href="/">
           <Image
             className="transition-transform hover:scale-[1.25]"
