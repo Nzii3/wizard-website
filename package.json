@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node mtotsx.ts && next dev",
-    "build": "node mtotsx.ts && next build",
+    "dev": "ts-node mtotsx.ts && next dev",
+    "build": "ts-node mtotsx.ts && next build",
     "start": "next start",
     "lint": "next lint"
   },
