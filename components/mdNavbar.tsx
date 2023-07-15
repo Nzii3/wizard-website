@@ -32,13 +32,13 @@ const Navbar = () => {
       animate={{
         opacity: 1,
       }}
-      className="flex w-full flex-col "
+      className="flex w-full flex-col fixed top-0 right-0 left-0 z-50"
     >
       <div className="flex items-center justify-between px-9 py-6">
         <Link href="/">
-          <Image
-            className="transition-transform hover:rotate-[30deg]"
-            src="/nav-logo.svg"
+        <Image
+            className="transition-transform hover:scale-[1.15]"
+            src="/wizard_standalone.png"
             alt="logo"
             width={50}
             height={50}
