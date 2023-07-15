@@ -28,11 +28,19 @@ const convertMarkdownToTsx = (markdownFile) => {
     import { Navbar, Footer } from "../components";
 
     const markdown = ${tsxContent};
+
+    // CustomLink component to render links with a CSS class
+    const CustomLink = ({ children, ...props }) => (
+      <a className="markdown-links" {...props}>
+        {children}
+      </a>
+    );
+
     const Page: React.FC = () => (
       <div className="grid min-h-screen gap-4">
         <Navbar />
         <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow" style={{placeSelf: 'center'}}>
-          <Markdown>{markdown}</Markdown>
+          <Markdown options={{ overrides: { a: { component: CustomLink } } }}>{markdown}</Markdown>
         </div>
         <Footer />
       </div>
@@ -45,7 +53,7 @@ const convertMarkdownToTsx = (markdownFile) => {
 
 // handle stuff in start
 fs.readdirSync(docsDir).forEach((file) => {
-  if(path.extname(file) === '.md') {
+  if (path.extname(file) === '.md') {
     convertMarkdownToTsx(path.join(docsDir, file));
   }
 });

@@ -3,7 +3,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo ligula a
 
 <h1 style="text-align: center;">Interested?</h1>
 
-Let's check out the [statistics](https://example.com/stats). 
+Let's check out the [statistics](https://example.com/stats).
 
 > Make sure to read!
 
