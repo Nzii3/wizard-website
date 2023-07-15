@@ -25,14 +25,14 @@ const convertMarkdownToTsx = (markdownFile) => {
     `
     import React from 'react';
     import Markdown from 'markdown-to-jsx';
-    import { MdNavbar, Footer } from "../components";
+    import { Navbar, Footer } from "../components";
 
     const markdown = ${tsxContent};
 
     const Page: React.FC = () => (
-      <div className="grid min-h-screen place-content-center gap-4">
-        <MdNavbar />
-        <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow">
+      <div className="grid min-h-screen gap-4">
+        <Navbar />
+        <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow" style={{placeSelf: 'center'}}>
           <Markdown>{markdown}</Markdown>
         </div>
         <Footer />
