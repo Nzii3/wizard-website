@@ -126,7 +126,7 @@ const MdFooter = () => {
 
       <div className="flex w-full flex-col justify-between gap-y-2 semimd:flex-row">
         <div className="font-header text-center font-medium md:text-left">
-          Â© Wizard {new Date().getFullYear()}. All rights reserved.{" "}
+          © Wizard {new Date().getFullYear()}. All rights reserved.{" "}
         </div>
       </div>
     </div>

@@ -3,5 +3,5 @@ Thanks for your interest in our Beta Program! Our Beta program was designed to a
 
 <h1 style="text-align: center;">Interested?</h1>
 
-Fill out the form here to apply for our Beta Program. Good luck!  
+Fill out the form here to apply for our Beta Program. Good luck!
 
