@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../public/wizard_standalone.png";
-const mdFooter = () => {
+const MdFooter = () => {
   const usefulLinks = [
     {
       name: "Invite to Server",
@@ -132,4 +132,4 @@ const mdFooter = () => {
     </div>
   );
 };
-export default mdFooter;
+export default MdFooter;

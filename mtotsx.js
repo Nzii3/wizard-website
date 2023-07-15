@@ -25,7 +25,7 @@ const convertMarkdownToTsx = (markdownFile) => {
     `
     import React from 'react';
     import Markdown from 'markdown-to-jsx';
-    import { mdNavbar, mdFooter } from "../components";
+    import { MdNavbar, MdFooter } from "../components";
 
     const markdown = ${tsxContent};
 
