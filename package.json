@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently --kill-others \"node mtotsx.js\" \"next dev\"",
-    "dev": "concurrently --kill-others \"node mtotsx.js\" \"next build\"",
+    "build": "concurrently --kill-others \"node mtotsx.js\" \"next build\"",
     "start": "next start",
     "lint": "next lint"
   },
