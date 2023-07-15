@@ -28,10 +28,10 @@ const CallToAction = () => {
         className="flex flex-col items-center gap-y-2 px-2 text-center"
       >
         <div className="font-heading text-4xl sm:text-5xl md:text-6xl">
-          Add Server Manager Now!
+          Add Wizard Now!
         </div>
         <div className="text-lg text-white-300 sm:text-xl md:text-2xl">
-          Take control of your server, with Server Manager!
+          Engage with global economy with Wizard!
         </div>
       </motion.div>
       <Link href={"https://servermanagerbot.ml/invite"}>

@@ -65,7 +65,7 @@ const Footer = () => {
           <div className="flex items-center justify-center gap-x-2 md:justify-start">
             <Image src={logo} alt="logo" className="scale-90" />
             <div className="font-header text-[1.7rem] font-bold sm:text-3xl">
-              Server Manager
+              Wizard
             </div>
           </div>
           <div className="font-body text-center font-medium text-white-300 md:text-left">
@@ -126,7 +126,7 @@ const Footer = () => {
 
       <div className="flex w-full flex-col justify-between gap-y-2 semimd:flex-row">
         <div className="font-header text-center font-medium md:text-left">
-          © Server Manager {new Date().getFullYear()}. All rights reserved.{" "}
+          © Wizard {new Date().getFullYear()}. All rights reserved.{" "}
         </div>
       </div>
     </div>
