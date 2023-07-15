@@ -7,7 +7,6 @@ import CallToAction from "./CallToAction";
 import Footer from "./Footer";
 import Team from "./about/Team";
 import Card from "./premium/Card";
-import chokidar from 'chokidar';
 
 export {
   Announcement,
@@ -20,4 +19,3 @@ export {
   Team,
   Card,
 };
-
