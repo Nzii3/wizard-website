@@ -1,17 +1,16 @@
 
     import React from 'react';
     import Markdown from 'markdown-to-jsx';
-    import { Navbar, Footer } from "../components";
+    import { components } from '../components';
+    const { MdNavbar, MdFooter } = components;
     
-    const markdown = "# Testing file\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non lorem id mauris luctus aliquet ac sed enim. Vivamus tincidunt sagittis tristique. Fusce interdum, justo id feugiat lacinia, turpis purus aliquam lectus, ut auctor felis sem ac erat. Nunc eu faucibus lacus. Proin tincidunt lectus id purus placerat, a tempus enim ullamcorper. Morbi auctor, elit id malesuada rhoncus, est risus mollis orci, sed faucibus nunc massa vel lacus. Quisque id felis elit. Donec rutrum libero vitae sem vestibulum, nec mattis est aliquet. Integer tempus facilisis lacus in aliquet. Nam posuere justo vel velit egestas, ac vulputate neque dictum.\r\n\r\n";
+    const markdown = "<h1 style=\"text-align: center;\">Beta Program</h1>\r\nThanks for your interest in our Beta Program! Our Beta program was designed to allow users to give us feedback on features before they are released to the main bot. Thus, giving you access to a beta bot upon acceptance into the program.\r\n\r\n<h1 style=\"text-align: center;\">Interested?</h1>\r\n\r\nFill out the form here to apply for our Beta Program. Good luck! \r\n\r\n";
     
     const Page: React.FC = () => (
-      <div className="flex flex-col min-h-screen">
+      <div className="grid min-h-screen place-content-center gap-4">
         <Navbar />
-        <div className="flex flex-grow justify-center items-center">
-          <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow">
-            <Markdown>{markdown}</Markdown>
-          </div>
+        <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow">
+          <Markdown>{markdown}</Markdown>
         </div>
         <Footer />
       </div>

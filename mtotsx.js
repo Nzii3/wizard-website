@@ -25,7 +25,8 @@ const convertMarkdownToTsx = (markdownFile) => {
     `
     import React from 'react';
     import Markdown from 'markdown-to-jsx';
-    import { mdNavbar, mdFooter } from "../components";
+    import { components } from '../components';
+    const { MdNavbar, MdFooter } = components;
     
     const markdown = ${tsxContent};
     
@@ -44,12 +45,23 @@ const convertMarkdownToTsx = (markdownFile) => {
   );
 };
 
-const watcher = chokidar.watch(docsDir, {
+const watcher = chokidar.watch(path.join(docsDir, '*.md'), {
   persistent: true,
-  ignoreInitial: true,
+  ignoreInitial: false,
   depth: 0,
 });
 
-
 watcher.on('add', convertMarkdownToTsx);
 watcher.on('change', convertMarkdownToTsx);
+
+// handle stuff in start
+watcher.on('ready', () => {
+  const watchedPaths = watcher.getWatched();
+
+  Object.keys(watchedPaths).forEach((watchedDir) => {
+    watchedPaths[watchedDir].forEach((file) => {
+      const fullPath = path.join(watchedDir, file);
+      convertMarkdownToTsx(fullPath);
+    });
+  });
+});

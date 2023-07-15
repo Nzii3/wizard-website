@@ -1,3 +1,7 @@
-# Testing file
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non lorem id mauris luctus aliquet ac sed enim. Vivamus tincidunt sagittis tristique. Fusce interdum, justo id feugiat lacinia, turpis purus aliquam lectus, ut auctor felis sem ac erat. Nunc eu faucibus lacus. Proin tincidunt lectus id purus placerat, a tempus enim ullamcorper. Morbi auctor, elit id malesuada rhoncus, est risus mollis orci, sed faucibus nunc massa vel lacus. Quisque id felis elit. Donec rutrum libero vitae sem vestibulum, nec mattis est aliquet. Integer tempus facilisis lacus in aliquet. Nam posuere justo vel velit egestas, ac vulputate neque dictum.
+<h1 style="text-align: center;">Beta Program</h1>
+Thanks for your interest in our Beta Program! Our Beta program was designed to allow users to give us feedback on features before they are released to the main bot. Thus, giving you access to a beta bot upon acceptance into the program.
+
+<h1 style="text-align: center;">Interested?</h1>
+
+Fill out the form here to apply for our Beta Program. Good luck! 
 
