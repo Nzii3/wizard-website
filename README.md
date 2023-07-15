@@ -1,35 +1,36 @@
-# Discord bots website template
-Stunning website with good UI design for the new Discord bots, built with Bootstrap and has many ready-made pages to edit by your own.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# v.2
-In this version, many things have been changed on the site to make it more wonderful and easy to use.
-* You can get the old version of the site, you can find it in ``master branch``.
+## Getting Started
 
-## main page:
+First, run the development server:
 
-![Screenshot1](https://raw.githubusercontent.com/Hadi-Koubeissi/Discord-bot-website-template/Main/assets/Screenshot.PNG)
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## command page:
-![Screenshot4](https://raw.githubusercontent.com/Hadi-Koubeissi/Discord-bot-website-template/Main/assets/Screen2.PNG)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-and more pages...
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-# Installing
-Download or fork the repo
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-`git clone https://github.com/Hadi-Koubeissi/Discord-bot-website-template`
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-open index.html with any code editor and edit the name or logo and then have fun.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Built With: 
+## Learn More
 
-* [Bootstrap](https://getbootstrap.com/) - The web framework used
-* [Jquery](https://jquery.com/) - For scripts
+To learn more about Next.js, take a look at the following resources:
 
-## Authors
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-[Hadi-Koubeissi](https://github.com/Hadi-Koubeissi)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## License
+## Deploy on Vercel
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
