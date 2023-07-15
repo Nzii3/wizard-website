@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node markdownToTsx.js && next dev",
-    "build": "node markdownToTsx.js && next build",
+    "dev": "node mtotsx.ts && next dev",
+    "build": "node mtotsx.ts && next build",
     "start": "next start",
     "lint": "next lint"
   },
