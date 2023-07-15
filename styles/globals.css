@@ -28,6 +28,10 @@ body {
   }
 }
 
+.markdown-links {
+  color:red;
+}
+
 
 .center {
   text-align: center;

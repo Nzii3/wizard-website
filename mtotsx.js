@@ -28,7 +28,6 @@ const convertMarkdownToTsx = (markdownFile) => {
     import { Navbar, Footer } from "../components";
 
     const markdown = ${tsxContent};
-
     const Page: React.FC = () => (
       <div className="grid min-h-screen gap-4">
         <Navbar />
