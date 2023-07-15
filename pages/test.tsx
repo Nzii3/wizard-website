@@ -7,7 +7,7 @@
 
     // CustomLink component to render links with a CSS class
     const CustomLink = ({ children, ...props }) => (
-      <a className="my-custom-link-class" {...props}>
+      <a className="markdown-links" {...props}>
         {children}
       </a>
     );
