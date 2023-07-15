@@ -1,5 +1,7 @@
 import Announcement from "./Announcement";
 import Navbar from "./Navbar";
+import MdNavbar from "./MdNavbar";
+import MdFooter from "./MdFooter"; 
 import Hero from "./Hero";
 import SocialProof from "./SocialProof";
 import Features from "./Features";
@@ -11,6 +13,8 @@ import Card from "./premium/Card";
 export {
   Announcement,
   Navbar,
+  MdNavbar,  // New
+  MdFooter,  // New
   Hero,
   SocialProof,
   Features,
