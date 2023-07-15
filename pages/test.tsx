@@ -3,18 +3,16 @@
     import Markdown from 'markdown-to-jsx';
     import { Navbar, Footer } from "../components";
 
-    const markdown = "# Testing file\r\nUse **this** file for [testing](https://example.com) the conversion process. Testing again. afafa\r\n![test](/screen.png)\r\n";
+    const markdown = "# Testing file\r\nUse **this** file for [testing](https://example.com) the conversion process. Testing again. \r\n![test](/screen.png)\r\n";
 
     const Page: React.FC = () => (
-      <div>
-      <Navbar />
-      <div className="min-w-screen flex flex-col items-center overflow-x-hidden p-4">
-        <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow">
+      <div className="grid min-h-screen grid-rows-auto gap-4">
+        <Navbar />
+        <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow row-start-1 row-end-3">
           <Markdown>{markdown}</Markdown>
         </div>
+        <Footer className="row-start-3 row-end-4" />
       </div>
-      <Footer />
-    </div>
     );
 
     export default Page;

@@ -37,8 +37,8 @@ const Navbar = () => {
       <div className="flex items-center justify-between px-9 py-6">
         <Link href="/">
           <Image
-            className="transition-transform hover:rotate-[30deg]"
-            src="/nav-logo.svg"
+            className="transition-transform hover:scale-[1.25]"
+            src="/wizard_standalone.png"
             alt="logo"
             width={50}
             height={50}
