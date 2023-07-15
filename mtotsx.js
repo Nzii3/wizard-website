@@ -31,11 +31,11 @@ const convertMarkdownToTsx = (markdownFile) => {
 
     const Page: React.FC = () => (
       <div className="grid min-h-screen place-content-center gap-4">
-        <mdNavbar />
+        <MdNavbar />
         <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow">
           <Markdown>{markdown}</Markdown>
         </div>
-        <mdFooter />
+        <MdFooter />
       </div>
     );
 
