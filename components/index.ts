@@ -23,6 +23,10 @@ if (!fs.existsSync(pagesDir)) {
 const convertMarkdownToTsx = (markdownFile: string) => {
   const markdownContent = fs.readFileSync(markdownFile, 'utf-8');
   const tsxContent = JSON.stringify(markdownContent);
+
+  if (path.basename(markdownFile) === 'README.md') {
+    return;
+  }
   
   const tsxFile = path.resolve(pagesDir, path.basename(markdownFile, '.md') + '.tsx');
   fs.writeFileSync(
