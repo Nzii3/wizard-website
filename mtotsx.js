@@ -25,7 +25,7 @@ const convertMarkdownToTsx = (markdownFile) => {
     `
     import React from 'react';
     import Markdown from 'markdown-to-jsx';
-    import { MdNavbar, MdFooter } from "../components";
+    import { MdNavbar, Footer } from "../components";
 
     const markdown = ${tsxContent};
 
@@ -35,7 +35,7 @@ const convertMarkdownToTsx = (markdownFile) => {
         <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow">
           <Markdown>{markdown}</Markdown>
         </div>
-        <MdFooter />
+        <Footer />
       </div>
     );
 
