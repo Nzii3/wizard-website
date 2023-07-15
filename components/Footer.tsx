@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../public/wizard_standalone.png";
+import logo from "../public/footer-logo.svg";
 const Footer = () => {
   const usefulLinks = [
     {
@@ -59,11 +59,11 @@ const Footer = () => {
   ];
 
   return (
-    <div className="flex w-full flex-col gap-y-12 bg-[#191A1C] py-[1.875rem] px-4 xl:px-20 mt-8">
+    <div className="flex w-full flex-col gap-y-12 bg-[#191A1C] py-[1.875rem] px-4 xl:px-20">
       <div className="flex w-full flex-col items-center justify-between gap-y-6 md:items-start lg:flex-row">
         <div className="flex  flex-col gap-y-2 sm:max-w-sm">
           <div className="flex items-center justify-center gap-x-2 md:justify-start">
-            <Image src={logo} alt="logo" width={35} height={35}/>
+            <Image src={logo} alt="logo" className="scale-90" />
             <div className="font-header text-[1.7rem] font-bold sm:text-3xl">
               Wizard
             </div>
