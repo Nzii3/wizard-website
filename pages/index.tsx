@@ -36,7 +36,7 @@ export default function Home({
 }
 
 const client = createClient({
-  projectId: "osy5hr6i",
+  projectId: "dw7gacrj",
   dataset: "production",
   apiVersion: "2023-01-02",
   useCdn: false,
@@ -52,6 +52,6 @@ export async function getStaticProps() {
     props: {
       announcement,
     },
-    revalidate: 60, // Will re-generate the page with announcement every 60 seconds
+    revalidate: 90, // Will re-generate the page with announcement every 60 seconds
   };
 }
