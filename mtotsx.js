@@ -1,64 +1,67 @@
 const chokidar = require('chokidar');
 const fs = require('fs');
 const path = require('path');
+const mdToTsx = require('markdown-to-tsx');
+const { mkdirpSync } = require('fs-extra');
 
-const docsDir = path.resolve(__dirname, './docs');
-const pagesDir = path.resolve(__dirname, './pages');
+const docsFolder = './docs';
+const pagesFolder = './pages';
+const componentsFolder = '../components';
 
-// just an extra check
-if (!fs.existsSync(pagesDir)) {
-  fs.mkdirSync(pagesDir);
-}
-//
+const convertMarkdownToTsx = async (inputPath, outputPath) => {
+  const stats = fs.statSync(inputPath);
 
-const convertMarkdownToTsx = (markdownFile) => {
-  const markdownContent = fs.readFileSync(markdownFile, 'utf-8');
-  const tsxContent = JSON.stringify(markdownContent);
+  if (stats.isFile() && path.extname(inputPath) === '.md') {
+    const markdownContent = fs.readFileSync(inputPath, 'utf-8');
+    const tsxContent = await mdToTsx(markdownContent);
 
-  if (path.basename(markdownFile) === 'README.md') {
-    return;
+    const tsxFilePath = outputPath + '.tsx';
+    fs.writeFileSync(
+      tsxFilePath,
+      `
+        import React from 'react';
+        import Markdown from 'markdown-to-jsx';
+        import { Navbar, Footer } from '${componentsFolder}';
+
+        const markdown = ${JSON.stringify(tsxContent)};
+
+        // CustomLink component to render links with a CSS class
+        const CustomLink = ({ children, ...props }) => (
+          <a className="markdown-links" {...props}>
+            {children}
+          </a>
+        );
+
+        const Page: React.FC = () => (
+          <div className="grid min-h-screen gap-4">
+            <Navbar />
+            <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow" style={{placeSelf: 'center'}}>
+              <Markdown options={{ overrides: { a: { component: CustomLink } } }}>{markdown}</Markdown>
+            </div>
+            <Footer />
+          </div>
+        );
+
+        export default Page;
+      `
+    );
+  } else if (stats.isDirectory()) {
+    const folderName = path.basename(inputPath);
+    const outputFolderPath = path.join(outputPath, folderName);
+    mkdirpSync(outputFolderPath);
+
+    const files = fs.readdirSync(inputPath);
+    files.forEach((file) => {
+      const filePath = path.join(inputPath, file);
+      const outputFile = path.join(outputFolderPath, file);
+      convertMarkdownToTsx(filePath, outputFile);
+    });
   }
-
-  const tsxFile = path.resolve(pagesDir, path.basename(markdownFile, '.md') + '.tsx');
-  fs.writeFileSync(
-    tsxFile,
-    `
-    import React from 'react';
-    import Markdown from 'markdown-to-jsx';
-    import { Navbar, Footer } from "../components";
-
-    const markdown = ${tsxContent};
-
-    // CustomLink component to render links with a CSS class
-    const CustomLink = ({ children, ...props }) => (
-      <a className="markdown-links" {...props}>
-        {children}
-      </a>
-    );
-
-    const Page: React.FC = () => (
-      <div className="grid min-h-screen gap-4">
-        <Navbar />
-        <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow" style={{placeSelf: 'center'}}>
-          <Markdown options={{ overrides: { a: { component: CustomLink } } }}>{markdown}</Markdown>
-        </div>
-        <Footer />
-      </div>
-    );
-
-    export default Page;
-    `
-  );
 };
 
-// handle stuff in start
-fs.readdirSync(docsDir).forEach((file) => {
-  if (path.extname(file) === '.md') {
-    convertMarkdownToTsx(path.join(docsDir, file));
-  }
-});
+convertMarkdownToTsx(docsFolder, pagesFolder);
 
-const watcher = chokidar.watch(docsDir, {
+const watcher = chokidar.watch(docsFolder, {
   persistent: true,
   ignoreInitial: false,
   depth: 0,
