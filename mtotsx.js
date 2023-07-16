@@ -5,7 +5,7 @@ const path = require('path');
 const docsDir = path.resolve(__dirname, './docs');
 const pagesDir = path.resolve(__dirname, './pages');
 
-// just an extra check
+// checks if it exists
 if (!fs.existsSync(pagesDir)) {
   fs.mkdirSync(pagesDir);
 }
