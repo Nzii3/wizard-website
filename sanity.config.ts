@@ -5,10 +5,10 @@ import { schemaTypes } from "./schemas";
 
 export default defineConfig({
   basePath: "/studio",
-  name: "Server_Manager_Content_Studio",
-  title: "Server Manager Content Studio",
+  name: "Wizard_Studio",
+  title: "Wizard Studio",
 
-  projectId: "osy5hr6i",
+  projectId: "dw7gacrj",
   dataset: "production",
 
   plugins: [deskTool(), visionTool()],
