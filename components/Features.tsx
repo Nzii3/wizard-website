@@ -11,12 +11,13 @@ import {
   faClipboardList,
   faLightbulb,
   faScrewdriverWrench,
+  faShoppingBag,
 } from "@fortawesome/free-solid-svg-icons";
 
-import screen from "../public/screen.png";
+import screen from "../public/screen_coming_soon.png";
 import screen2 from "../public/screen2.png";
-import screen3 from "../public/screen3.png";
-import screen4 from "../public/screen4.png"
+import screen3 from "../public/screen_coming_soon.png";
+import screen4 from "../public/screen_coming_soon.png"
 
 import scale from "../public/scale.svg";
 import coin from "../public/coin.png";
@@ -32,7 +33,7 @@ const Features = () => {
         "Interact with a global economy bot like Wizard and play in interactive games, rob your friends, work at your imaginary virtual shift to earn coins & items, earn daily/weekly/monthly coins, and much more. Climb to the top of the global leaderboard to earn a special badge and perks!",
       link: "https://docs.servermanagerbot.ml/commands/giveaways",
       icon: coin,
-      src: screen2,
+      src: screen,
     },
     {
       title: "Statistics",
@@ -40,7 +41,7 @@ const Features = () => {
         `Monitor your command count, accumulated coins, badges, work shifts, and numerous other statistics effortlessly using the Wizard's "/stats" command!`,
       link: "https://docs.servermanagerbot.ml/commands/moderation",
       icon: poll,
-      src: screen,
+      src: screen2,
     },
     {
       title: "Polls",
@@ -114,7 +115,8 @@ const Features = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
               viewport={{ once: true }}
-              className="box-shadow-black relative overflow-clip rounded-lg bg-[#292c30] sm:w-[33rem] "
+              className="box-shadow-black relative overflow-clip rounded-lg bg-[#181a1c] sm:w-[33rem]"
+
             >
               <Image src={feature.src} alt="feature" placeholder="blur" />
             </motion.div>
@@ -170,12 +172,11 @@ const Features = () => {
           className="box-shadow-black flex flex-col gap-y-6 rounded-lg bg-[#1E1E1E] py-6 lg:items-center xl:w-[20rem]"
         >
           <div className="flex items-center px-8 lg:px-0">
-            <FontAwesomeIcon icon={faClipboardList} size="3x" color="#fff" />
-            <span className="ml-4 font-heading text-4xl sm:text-4xl">Suggestions</span>
+            <FontAwesomeIcon icon={faShoppingBag} size="3x" color="#fff" />
+            <span className="ml-4 font-heading text-4xl sm:text-4xl">Custom Shops</span>
           </div>
           <div className="flex px-8 text-white-300 ">
-          Allow server members to share their ideas about server changes with
-            ease. Manage suggestions with suggestion marking, customize embeds, and more!
+          Improve your server's marketplace with personalized items for customized operations. Send messages to channels, assign/remove roles, and offer other useful functions.
           </div>
         </motion.div>
 
@@ -205,7 +206,7 @@ const Features = () => {
           </div>
 
           <div className="flex text-white-300 ">
-            Customize Server Manager's responses and behavior specifically for your server. Embeds can be customized with an embed builder.
+            Customize Wizard's responses and behavior specifically for your server. Embeds can be customized with an embed builder.
           </div>
         </motion.div>
 
