@@ -25,7 +25,7 @@ const Features = () => {
     {
       title: "Global Economy",
       description:
-        "Interact with a global economy bot like Wizard and play in interactive games, rob your friends, work at your imaginary virtual shift to earn coins & items, earn daily/weekly/monthly coins, and much more. Climb to the top of the global leaderboard to earn a special badge and perks!",
+        "Engage with Wizard, a global economy bot, to play interactive games, rob friends, work virtual shifts for coins and items, earn daily/weekly/monthly rewards, and reach the leaderboard's pinnacle for exclusive perks and badges!",
       link: "https://docs.servermanagerbot.ml/commands/giveaways",
       icon: coin,
       src: screen,
@@ -41,7 +41,7 @@ const Features = () => {
     {
       title: "Events",
       description:
-        "Delight your community with thrilling games and captivating events. Winners can earn exclusive rewards from the custom server shop. Join the fun and immerse yourself in an unforgettable experience of victory, glory, and coveted prizes from our virtual emporium!",
+        "Experience thrilling games and events, win exclusive rewards from our shop. Join now for an unforgettable journey of victory, glory, and coveted prizes in our virtual world!",
       link: "https://docs.servermanagerbot.ml/commands/polls",
       icon: poll,
       src: screen3,
