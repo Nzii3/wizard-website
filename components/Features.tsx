@@ -19,6 +19,7 @@ import screen3 from "../public/screen3.png";
 import screen4 from "../public/screen4.png"
 
 import scale from "../public/scale.svg";
+import coin from "../public/coin.png";
 import party from "../public/party.svg";
 import poll from "../public/poll.svg";
 import clipboard from "../public/clipboard.svg"
@@ -26,20 +27,20 @@ import clipboard from "../public/clipboard.svg"
 const Features = () => {
   const features = [
     {
-      title: "Moderation",
+      title: "Global Economy",
       description:
-        "Moderate your server with ease with warning, kick, mute, and ban commands! All logged with Server Manager's cases system.",
-      link: "https://docs.servermanagerbot.ml/commands/moderation",
-      icon: scale,
-      src: screen,
+        "Interact with a global economy bot like Wizard and play in interactive games, rob your friends, work at your imaginary virtual shift to earn coins & items, earn daily/weekly/monthly coins, and much more. Climb to the top of the global leaderboard to earn a special badge and perks!",
+      link: "https://docs.servermanagerbot.ml/commands/giveaways",
+      icon: coin,
+      src: screen2,
     },
     {
-      title: "Giveaways",
+      title: "Statistics",
       description:
-        "Create interactive giveaways with no limits. Customize your giveaways by setting extra entries, required roles, blacklisted roles, and much more!",
-      link: "https://docs.servermanagerbot.ml/commands/giveaways",
-      icon: party,
-      src: screen2,
+        `Monitor your command count, accumulated coins, badges, work shifts, and numerous other statistics effortlessly using the Wizard's "/stats" command!`,
+      link: "https://docs.servermanagerbot.ml/commands/moderation",
+      icon: poll,
+      src: screen,
     },
     {
       title: "Polls",

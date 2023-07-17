@@ -69,8 +69,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="font-body text-center font-medium text-white-300 md:text-left">
-            Manage your server with forms, giveaways, moderation, polls,
-            suggestions, custom embeds, and much more!
+            Engage in a worldwide economic community using Wizard, ascend to the pinnacle of the financial hierarchy, and dominate the global rankings!
           </div>
         </div>
 

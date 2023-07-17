@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import icon1 from "../public/icon1.gif";
 import icon2 from "../public/icon2.gif";
-import icon3 from "../public/icon3.gif";
+import icon3 from "../public/icon3.jpg";
 
 type Props = {};
 const SocialProof = (props: Props) => {
@@ -21,8 +21,8 @@ const SocialProof = (props: Props) => {
     },
     {
       src: icon3,
-      alt: "Market Masters",
-      link: "https://go.servermanagerbot.ml/market-masters",
+      alt: "Nziie Development",
+      link: "https://nziie.xyz/discord",
     },
   ];
 
@@ -44,7 +44,7 @@ const SocialProof = (props: Props) => {
         className="flex flex-col items-center justify-between gap-y-8 2xl:flex-row"
       >
         <div className="text-center font-heading text-3xl sm:text-5xl">
-          Trusted by 750+ Servers{" "}
+          Trusted by 30+ Servers{" "}
         </div>
         <div className="flex flex-row items-center gap-x-8 gap-y-6 lg:flex-row">
           {banners.map((banner, index) => (

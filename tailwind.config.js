@@ -12,7 +12,7 @@ module.exports = {
       },
       colors: {
         background: "#3c4be7",
-        'dark-background': '#0d6efd',
+        'dark-background': '#2937cc',
       },
       screens: {
         'semimd': '946px',
