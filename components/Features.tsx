@@ -8,22 +8,17 @@ import { Stars } from "./Navbar";
 import ReactSparkle from "react-sparkle";
 
 import {
-  faClipboardList,
-  faLightbulb,
-  faScrewdriverWrench,
   faShoppingBag,
+  faFaceGrinSquint
 } from "@fortawesome/free-solid-svg-icons";
 
-import screen from "../public/screen_coming_soon.png";
+import screen from "../public/screen.png";
 import screen2 from "../public/screen2.png";
 import screen3 from "../public/screen_coming_soon.png";
-import screen4 from "../public/screen_coming_soon.png"
 
 import scale from "../public/scale.svg";
 import coin from "../public/coin.png";
-import party from "../public/party.svg";
 import poll from "../public/poll.svg";
-import clipboard from "../public/clipboard.svg"
 
 const Features = () => {
   const features = [
@@ -38,26 +33,18 @@ const Features = () => {
     {
       title: "Statistics",
       description:
-        `Monitor your command count, accumulated coins, badges, work shifts, and numerous other statistics effortlessly using the Wizard's "/stats" command!`,
+        `Effortlessly track your command count, accumulated coins, badges, work shifts, and more with the Wizard's convenient "/stats" command! Stay informed and keep tabs on your progress with ease.`,
       link: "https://docs.servermanagerbot.ml/commands/moderation",
       icon: poll,
       src: screen2,
     },
     {
-      title: "Polls",
+      title: "Events",
       description:
-        "Host polls that members can vote on with Discord's Button UI and even see vote percentages! You can even make multiple choice polls.",
+        "Delight your community with thrilling games and captivating events. Winners can earn exclusive rewards from the custom server shop. Join the fun and immerse yourself in an unforgettable experience of victory, glory, and coveted prizes from our virtual emporium!",
       link: "https://docs.servermanagerbot.ml/commands/polls",
       icon: poll,
       src: screen3,
-    },
-    {
-      title: "Forms",
-      description:
-        "Host polls that members can vote on with Discord's Button UI and even see vote percentages! You can even make multiple choice polls.",
-      link: "https://docs.servermanagerbot.ml/commands/forms",
-      icon: clipboard,
-      src: screen4,
     },
   ];
 
@@ -142,6 +129,7 @@ const Features = () => {
         }}
         className="relative mb-12 flex w-full flex-col items-center justify-center gap-y-4"
       >
+      <br/>
         <Image
           src="/zigzag.svg"
           width={300}
@@ -152,7 +140,7 @@ const Features = () => {
         <div className="text-center font-heading text-6xl">More Features</div>
       </motion.div>
 
-      <div className="grid grid-cols-1 grid-rows-3 flex-col place-items-center items-center justify-between gap-y-12 px-8 sm:px-20 xl:grid-cols-3 xl:grid-rows-1">
+      <div className="grid grid-cols-2 grid-rows-2 flex-col place-items-center items-center justify-between gap-y-12 px-8 sm:px-20 xl:grid-cols-2 xl:grid-rows-1">
         <motion.div
           initial={{
             opacity: 0,
@@ -172,41 +160,11 @@ const Features = () => {
           className="box-shadow-black flex flex-col gap-y-6 rounded-lg bg-[#1E1E1E] py-6 lg:items-center xl:w-[20rem]"
         >
           <div className="flex items-center px-8 lg:px-0">
-            <FontAwesomeIcon icon={faShoppingBag} size="3x" color="#fff" />
+            <FontAwesomeIcon icon={faShoppingBag} size="2x" color="#fff" />
             <span className="ml-4 font-heading text-4xl sm:text-4xl">Custom Shops</span>
           </div>
           <div className="flex px-8 text-white-300 ">
           Improve your server's marketplace with personalized items for customized operations. Send messages to channels, assign/remove roles, and offer other useful functions.
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 50,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            delay: 0.5,
-            duration: 0.5,
-          }}
-          viewport={{
-            once: true,
-          }}
-          className="box-shadow-black mb-auto flex flex-col gap-y-6 rounded-lg bg-[#1E1E1E] px-6 py-6 sm:w-[27.125rem] sm:px-8 xl:w-[24rem]"
-        >
-          <div className="flex items-center">
-            <FontAwesomeIcon icon={faLightbulb} size="3x" color="#fff" />
-            <span className="ml-2.5 font-heading text-4xl sm:text-4xl">
-              Customization
-            </span>
-          </div>
-
-          <div className="flex text-white-300 ">
-            Customize Wizard's responses and behavior specifically for your server. Embeds can be customized with an embed builder.
           </div>
         </motion.div>
 
@@ -231,14 +189,14 @@ const Features = () => {
           <div className="box-shadow-black flex flex-col gap-y-6 rounded-lg bg-[#1E1E1E] py-6 lg:items-center xl:w-[19.3125rem]">
             <div className="flex items-center px-8 lg:px-0">
               <FontAwesomeIcon
-                icon={faScrewdriverWrench}
-                size="3x"
+                icon={faFaceGrinSquint}
+                size="2x"
                 color="#fff"
               />
-              <span className="ml-4 font-heading text-4xl">Utilities</span>
+              <span className="ml-4 font-heading text-3xl">Fun Commands</span>
             </div>
             <div className="flex px-8 text-white-300">
-              View in-depth info about the server, a member or user, and more! Other commands are in this category that are uncategorized.
+            Engage in enjoyable games alongside your friends, where the option to place bets adds an element of competition and the thrill of high stakes!
             </div>
           </div>
         </motion.div>

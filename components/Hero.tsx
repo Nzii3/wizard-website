@@ -56,7 +56,7 @@ const Hero = () => {
       </div>
 
       <div className="flex flex-col gap-x-8 gap-y-6 sm:flex-row">
-        <Link href={"https://servermanagerbot.ml/invite"}>
+        <Link href={"/invite"}>
           <motion.div
             initial={{
               opacity: 0,
@@ -77,7 +77,7 @@ const Hero = () => {
           </motion.div>
         </Link>
 
-        <Link href={"https://docs.servermanagerbot.ml/getting-started"}>
+        <Link href={"/getting-started"}>
           <motion.div
             initial={{
               opacity: 0,
@@ -98,7 +98,7 @@ const Hero = () => {
           </motion.div>
         </Link>
 
-        <Link href={"https://servermanagerbot.ml/support"}>
+        <Link href={"/support"}>
           <motion.div
             initial={{
               opacity: 0,
@@ -110,7 +110,7 @@ const Hero = () => {
               delay: 1,
               duration: 0.5,
             }}
-            className="box-shadow-gray relative  rounded-lg bg-gray-400 py-3 px-4 text-2xl font-semibold shadow-lg"
+            className="box-shadow-grey relative  rounded-lg bg-gray-400 py-3 px-4 text-2xl font-semibold shadow-lg"
           >
             <div className="flex items-center justify-center">
               <FontAwesomeIcon icon={faHome} />

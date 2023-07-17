@@ -74,6 +74,11 @@ body {
     @apply transition-all hover:translate-y-1 hover:translate-x-1 hover:shadow-none;
   }
 
+  .box-shadow-blurple {
+    box-shadow: 7px 7px 0px #5865f2;
+    @apply transition-all hover:translate-y-1 hover:translate-x-1 hover:shadow-none;
+  }
+
   .box-shadow-gold {
     box-shadow: 7px 7px 0px #9c821b;
     @apply transition-all hover:translate-y-1 hover:translate-x-1 hover:shadow-none;
@@ -81,14 +86,20 @@ body {
 
   .box-shadow-black {
     box-shadow: 7px 7px 0px #26292e;
+    @apply transition-all hover:translate-y-1 hover:translate-x-1 hover:shadow-none;
   }
 
   .box-shadow-white {
     box-shadow: 7px 7px 0px #ffffff;
   }
 
+  .box-shadow-grey {
+    box-shadow: 7px 7px 0px #4F545C;
+    @apply transition-all hover:translate-y-1 hover:translate-x-1 hover:shadow-none;
+  }
+
   .box-shadow-gray {
-    box-shadow: 7px 7px 0px #64748b;
+    box-shadow: 7px 7px 0px #4F545C;
     @apply transition-all hover:translate-y-1 hover:translate-x-1 hover:shadow-none;
   }
 

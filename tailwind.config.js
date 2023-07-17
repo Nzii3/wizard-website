@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         background: "#3c4be7",
         'dark-background': '#2937cc',
+        'grey': '#4F545C'
       },
       screens: {
         'semimd': '946px',

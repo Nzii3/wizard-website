@@ -31,14 +31,14 @@ const CallToAction = () => {
           Add Wizard Now!
         </div>
         <div className="text-lg text-white-300 sm:text-xl md:text-2xl">
-          Engage with global economy with Wizard!
+          Engage in global economy with Wizard!
         </div>
       </motion.div>
-      <Link href={"https://servermanagerbot.ml/invite"}>
-        <div className="box-shadow-blue relative rounded-lg bg-dark-background py-3 px-4 text-2xl font-semibold shadow-lg">
+      <Link href={"/beta-testers"}>
+        <div className="box-shadow-black relative rounded-lg bg-grey py-3 px-4 text-2xl font-semibold shadow-lg">
           <div className="flex items-center justify-center">
             <FontAwesomeIcon icon={faDiscord} />
-            <span className="ml-2">Invite to Server</span>
+            <span className="ml-2">Coming soon!</span>
           </div>
         </div>
       </Link>
