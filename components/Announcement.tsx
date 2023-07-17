@@ -46,7 +46,6 @@ const Announcement = ({ text, link }: { text: string; link: string }) => {
             <div className=""></div>
             <Link
               className={`${!link && "pointer-events-none"}`}
-              target={link ? "_blank" : ""}
               href={link || "#"}
             >
               <div className="inline-block underline">
