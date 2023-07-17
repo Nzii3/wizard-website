@@ -15,14 +15,13 @@ const Premium = () => {
 
         <div className="flex w-full flex-wrap justify-around gap-10">
           <Card
-            type="Supporter"
+            type="Mystical User"
             cost={1}
-            link="https://r.nziie.xyz/server-manager-premium"
+            link="https://www.patreon.com/checkout/nziiedev/6987448"
             features={[
-              "Extra customization & features",
-              "Raised limits in features (giveaways, forms, etc.)",
-              "Exclusive sneak peaks",
-              "Help cover hosting and other resource costs",
+              "1.5x coin booster",
+              "1.25x items chance",
+              "...And more!",
             ]}
           />
           {/* <Card
