@@ -19,7 +19,7 @@ const Card = ({
     <div className="box-shadow-black flex w-full flex-col gap-y-3 rounded-xl bg-black/70 py-6 px-3 sm:w-[25rem] sm:px-6">
       <div className="text-center font-heading text-4xl">{type}</div>
       <div className="mb-4 flex items-center justify-center gap-x-2 text-xl">
-        <span className="text-3xl font-bold text-green-400">€{cost}</span> per
+        <span className="text-3xl font-bold text-green-400">${cost}</span> per
         month
       </div>
 
