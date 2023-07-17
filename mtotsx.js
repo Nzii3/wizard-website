@@ -29,18 +29,11 @@ const convertMarkdownToTsx = (markdownFile) => {
 
     const markdown = ${tsxContent};
 
-    // CustomLink component to render links with a CSS class
-    const CustomLink = ({ children, ...props }) => (
-      <a className="markdown-links" {...props}>
-        {children}
-      </a>
-    );
-
     const Page: React.FC = () => (
       <div className="grid min-h-screen gap-4">
         <Navbar />
         <div className="prose prose-invert rounded-xl bg-black/20 p-8 dark-background shadow" style={{placeSelf: 'center'}}>
-          <Markdown options={{ overrides: { a: { component: CustomLink } } }}>{markdown}</Markdown>
+          <Markdown>{markdown}</Markdown>
         </div>
         <Footer />
       </div>
