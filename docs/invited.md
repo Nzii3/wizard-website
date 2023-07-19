@@ -1,0 +1,2 @@
+# Thanks for choosing Wizard!
+Check out [the getting started page](/getting-started) to get Wizard setup correctly in your server, it's simple! Want to support development and help cover resource costs? Consider upgrading your user profile to Wizard premium or getting your server Wizard premium. User premium gives you a coin multiplier, item, multiplier and much more, giving you more payout. [Learn more](/premium).

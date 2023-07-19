@@ -1,14 +1,5 @@
 import Individual from "./Individual";
 import vnziee from "../../public/vnziee.png";
-import john from "../../public/john.png";
-import stryker from "../../public/strykera.png";
-import anon from "../../public/anon.png";
-import neb from "../../public/neb.png";
-import scripted from "../../public/scripted.gif";
-import rishaune from "../../public/rishaune.png"
-import aiko from "../../public/aiko.png";
-import dinotech from "../../public/dinotech.png";
-import vixen from "../../public/vixen.gif";
 
 const Team = () => {
   const teamData = data();
