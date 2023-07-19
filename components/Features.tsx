@@ -49,61 +49,43 @@ const Features = () => {
   ];
 
   return (
-    <div
-      className="flex flex-col"
-      style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='20' viewBox='0 0 20 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6H6v4H4V6H2V4h2V0h2v4h10V0h2v4h2v2h-2v4h-2V6z' fill='%23404eed' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E")`,
-      }}
-    >
+    <div className="flex flex-col">
       {features.map((feature, index) => (
-        <div
-          key={index}
-          className="flex h-[100vh] items-center px-4 lg:h-[70vh] xl:h-[60vh]"
-        >
-          <div
-            className={`flex w-full flex-col items-center justify-around gap-y-8 ${
-              index % 2 == 1 ? "lg:flex-row-reverse" : "lg:flex-row"
-            }`}
-          >
-            <div className="flex ">
-              <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-                viewport={{ once: true }}
-                className={`${
-                  index % 2 == 1 && "ml-auto"
-                } gap flex flex-col gap-y-8 rounded-xl bg-black/70  px-7 py-10 shadow-xl sm:w-[32rem]`}
-              >
-                <div className="flex items-center gap-x-3 font-heading text-4xl sm:text-5xl">
+        <div key={index} className="flex items-center px-4 lg:px-16">
+          <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 ${index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="gap flex flex-col gap-y-8 rounded-xl bg-black/70 px-7 py-10 shadow-xl w-full sm:w-[32rem]"
+            >
+              <div className="flex items-center gap-x-3 font-heading text-4xl sm:text-5xl">
                 <Image
-                    alt={feature.icon}
-                    src={feature.icon}
-                    width={48}
-                    height={48}
-                  /> {feature.title}{" "}
-                </div>
-                <div className="text-xl text-white-300">
-                  {feature.description}
-                </div>
-
-                <div>
-                  <Link href={feature.link} target="_blank">
-                    <button className="box-shadow-green inline-block rounded-lg bg-emerald-500 px-4 py-3 text-lg font-semibold">
-                      Learn More
-                    </button>
-                  </Link>
-                </div>
-              </motion.div>
-            </div>
-
+                  alt={feature.icon}
+                  src={feature.icon}
+                  width={48}
+                  height={48}
+                />
+                {feature.title}
+              </div>
+              <div className="text-xl text-white-300">
+                {feature.description}
+              </div>
+              <div>
+                <Link href={feature.link} target="_blank">
+                  <button className="box-shadow-green inline-block rounded-lg bg-emerald-500 px-4 py-3 text-lg font-semibold">
+                    Learn More
+                  </button>
+                </Link>
+              </div>
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
               viewport={{ once: true }}
-              className="box-shadow-black relative overflow-clip rounded-lg bg-[#181a1c] sm:w-[33rem]"
-
+              className="box-shadow-black relative overflow-clip rounded-lg bg-[#181a1c] w-full sm:w-[33rem]"
             >
               <Image src={feature.src} alt="feature" placeholder="blur" />
             </motion.div>
@@ -127,9 +109,9 @@ const Features = () => {
         viewport={{
           once: true,
         }}
-        className="relative mb-12 flex w-full flex-col items-center justify-center gap-y-4"
+        className="relative mb-12 flex flex-col items-center justify-center gap-y-4"
       >
-      <br/>
+        <br />
         <Image
           src="/zigzag.svg"
           width={300}
@@ -140,7 +122,7 @@ const Features = () => {
         <div className="text-center font-heading text-6xl">More Features</div>
       </motion.div>
 
-      <div className="grid grid-cols-2 grid-rows-2 flex-col place-items-center items-center justify-between gap-y-12 px-8 sm:px-20 xl:grid-cols-2 xl:grid-rows-1">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-8 sm:px-20">
         <motion.div
           initial={{
             opacity: 0,
@@ -157,14 +139,14 @@ const Features = () => {
           viewport={{
             once: true,
           }}
-          className="box-shadow-black flex flex-col gap-y-6 rounded-lg bg-[#1E1E1E] py-6 lg:items-center xl:w-[20rem]"
+          className="box-shadow-black flex flex-col gap-y-6 rounded-lg bg-[#1E1E1E] py-6 items-center"
         >
-          <div className="flex items-center px-8 lg:px-0">
+          <div className="flex items-center">
             <FontAwesomeIcon icon={faShoppingBag} size="2x" color="#fff" />
             <span className="ml-4 font-heading text-4xl sm:text-4xl">Custom Shops</span>
           </div>
-          <div className="flex px-8 text-white-300 ">
-          Improve your server's marketplace with personalized items for customized operations. Send messages to channels, assign/remove roles, and offer other useful functions.
+          <div className="flex text-white-300">
+            Improve your server's marketplace with personalized items for customized operations. Send messages to channels, assign/remove roles, and offer other useful functions.
           </div>
         </motion.div>
 
@@ -184,20 +166,14 @@ const Features = () => {
           viewport={{
             once: true,
           }}
-          className="flex max-w-[28rem]"
+          className="box-shadow-black flex flex-col gap-y-6 rounded-lg bg-[#1E1E1E] py-6 items-center"
         >
-          <div className="box-shadow-black flex flex-col gap-y-6 rounded-lg bg-[#1E1E1E] py-6 lg:items-center xl:w-[19.3125rem]">
-            <div className="flex items-center px-8 lg:px-0">
-              <FontAwesomeIcon
-                icon={faFaceGrinSquint}
-                size="2x"
-                color="#fff"
-              />
-              <span className="ml-4 font-heading text-3xl">Fun Commands</span>
-            </div>
-            <div className="flex px-8 text-white-300">
+          <div className="flex items-center">
+            <FontAwesomeIcon icon={faFaceGrinSquint} size="2x" color="#fff" />
+            <span className="ml-4 font-heading text-3xl">Fun Commands</span>
+          </div>
+          <div className="flex text-white-300">
             Engage in enjoyable games alongside your friends, where the option to place bets adds an element of competition and the thrill of high stakes!
-            </div>
           </div>
         </motion.div>
       </div>
@@ -220,11 +196,10 @@ const Features = () => {
             }}
             className="box-shadow-gold relative inline-block rounded-lg px-3 py-3 text-lg font-semibold shadow-lg"
             style={{
-              background:
-                "linear-gradient(94.48deg, #DABD4D 16.25%, #D2AF26 91.78%)",
+              background: "linear-gradient(94.48deg, #DABD4D 16.25%, #D2AF26 91.78%)",
             }}
           >
-            <div className=" relative flex items-center text-xl sm:text-2xl">
+            <div className="relative flex items-center text-xl sm:text-2xl">
               <ReactSparkle
                 count={20}
                 minSize={7}
@@ -242,4 +217,5 @@ const Features = () => {
     </div>
   );
 };
+
 export default Features;
