@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="font-body text-center font-medium text-white-300 md:text-left">
-            Engage in a worldwide economic community using Wizard, ascend to the pinnacle of the financial hierarchy, and dominate the global rankings!
+            Engage in a global economic community using Wizard, ascend to the pinnacle of the financial hierarchy, and dominate the global rankings!
           </div>
         </div>
 

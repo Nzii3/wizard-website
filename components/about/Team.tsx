@@ -9,7 +9,7 @@ const Team = () => {
   return (
     <div className="flex min-h-[calc(100vh-92px)] flex-col items-center justify-around gap-y-8 py-12 px-36">
       <div className="mb-12 text-center font-heading text-6xl">
-        Meet the Developers
+        Meet the Crew
       </div>
 
       <div className="flex w-full flex-wrap justify-around gap-y-24">
@@ -30,7 +30,10 @@ const Team = () => {
       <div className="mb-12 text-center font-heading text-6xl">
         Staff Team
       </div>
-      <div className="flex w-full flex-wrap justify-around gap-y-24">
+      <div className="mb-10 text-center font-heading text-4xl">
+        No Staff team just yet!
+      </div>
+      {/* <div className="flex w-full flex-wrap justify-around gap-y-24">
         {staffData.map((member, index) => (
           <div key={index}>
             <Individual
@@ -43,12 +46,15 @@ const Team = () => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
       <br/>
       <div className="mb-12 text-center font-heading text-6xl">
         Beta Testers
       </div>
-      <div className="flex w-full flex-wrap justify-around gap-y-24">
+      <div className="mb-10 text-center font-heading text-4xl">
+        Beta Testers not listed yet!
+      </div>
+      {/* <div className="flex w-full flex-wrap justify-around gap-y-24">
         {betaTestersData.map((member, index) => (
           <div key={index}>
             <Individual
@@ -61,7 +67,7 @@ const Team = () => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
 
     </div>
   );
