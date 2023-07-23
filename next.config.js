@@ -5,27 +5,17 @@ const nextConfig = {
     return [
       {
         source: '/support',
-        destination: 'https://discord.gg/6bCKvP24kb',
+        destination: 'https://wizard-help.nziie.xyz',
         permanent: true,
       },
       {
-        source: '/discord',
-        destination: 'https://discord.gg/6bCKvP24kb',
+        source: '/forum',
+        destination: '/support',
         permanent: true,
       },
       {
         source: '/invite',
         destination: '/beta-testers',
-        permanent: true,
-      },
-      {
-        source: '/docs',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/documentation',
-        destination: '/',
         permanent: true,
       },
       {
