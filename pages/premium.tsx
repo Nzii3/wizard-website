@@ -17,24 +17,25 @@ const Premium = () => {
           <Card
             type="Mystical User"
             cost={1}
-            link="https://www.patreon.com/checkout/nziiedev/6987448"
+            link="https://www.patreon.com/checkout/nziiedev/10007840"
             features={[
               "1.5x coin booster",
               "1.25x items chance",
               "...And more!",
             ]}
           />
-          {/* <Card
-            type="Advanced Supporter"
-            cost={5}
-            link="https://ko-fi.com/summary/35c230b5-e4e1-4b96-a857-f37712ee6e1e"
+
+          <Card
+            type="Mystical Server"
+            cost={2}
+            link="https://www.patreon.com/checkout/nziiedev/6987448"
             features={[
-              "All Supporter Tier perks",
-              "Basic Bot Hosting Server",
-              "Custom branded Server Manager",
-              "Customizable bot status"
+              "Customizable server shop",
+              "More community-driven event games",
+              "Longer duration on mini-games",
+              "...And more!",
             ]}
-          /> */}
+          />
           {/* <Card
             type="Super Supporter"
             cost={5}
