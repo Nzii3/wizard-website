@@ -24,6 +24,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/getting-started',
+        destination: 'https://wizard-help.nziie.xyz/d/20-public-release',
+        permanent: true,
+      },
+      {
         source: '/about',
         destination: '/team',
         permanent: true,
