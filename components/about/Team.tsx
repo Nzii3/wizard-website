@@ -77,7 +77,7 @@ export default Team;
 const data = () => {
   return [
     {
-      name: "vNziie--#7777",
+      name: "vNziie-- (nziie.dev)",
       role: "Core Developer",
       about: `"Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it." - notsorealsanta`,
       social: {
@@ -88,7 +88,6 @@ const data = () => {
       image: vnziee,
       gradient: "from-[#3f09ff] to-[#830862]",
     },
-
   ];
 };
 
