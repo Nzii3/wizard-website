@@ -1,5 +1,6 @@
 import Individual from "./Individual";
 import vnziee from "../../public/vnziee.png";
+import dizzi from "../../public/dizzi.png"
 
 const Team = () => {
   const teamData = data();
@@ -30,10 +31,10 @@ const Team = () => {
       <div className="mb-12 text-center font-heading text-6xl">
         Staff Team
       </div>
-      <div className="mb-10 text-center font-heading text-4xl">
+      {/* <div className="mb-10 text-center font-heading text-4xl">
         No Staff team just yet!
-      </div>
-      {/* <div className="flex w-full flex-wrap justify-around gap-y-24">
+      </div> */}
+      <div className="flex w-full flex-wrap justify-around gap-y-24">
         {staffData.map((member, index) => (
           <div key={index}>
             <Individual
@@ -46,7 +47,7 @@ const Team = () => {
             />
           </div>
         ))}
-      </div> */}
+      </div>
       <br/>
       <div className="mb-12 text-center font-heading text-6xl">
         Beta Testers
@@ -93,6 +94,16 @@ const data = () => {
 
 const data2 = () => {
   return [
+    {
+      name: "iamDizzi (iam_dizzi)",
+      role: "Graphic Designer",
+      about: ``,
+      social: {
+        website: "https://umarfarooqdesignsz.dcms.site/",
+        discord: "https://discordapp.com/users/871399361882492928",
+      },
+      image: dizzi,
+    },
   ];
 };
 

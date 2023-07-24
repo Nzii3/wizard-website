@@ -28,11 +28,11 @@ const Individual = ({
 
   return (
     <div
-      className={`relative rounded-2xl bg-[#36393E] bg-gradient-to-b px-4 pb-4 pt-12 shadow-lg 
+      className={`relative rounded-2xl bg-[#282a2e] bg-gradient-to-b px-4 pb-4 pt-12 shadow-lg 
     ${gradient && `${gradient}`}
     `}
     >
-      <div className="absolute -top-14 w-24 overflow-clip rounded-full border-[6px] border-[#36393E]">
+      <div className="absolute -top-14 w-24 overflow-clip rounded-full shadow-xl  ">
         <Image
           className="object-cover"
           src={image}
