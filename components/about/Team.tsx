@@ -103,6 +103,7 @@ const data2 = () => {
         discord: "https://discordapp.com/users/871399361882492928",
       },
       image: dizzi,
+      gradient: "from-[#5d00db] to-[#ff00d1]",
     },
   ];
 };
