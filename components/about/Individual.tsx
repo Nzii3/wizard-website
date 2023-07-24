@@ -28,7 +28,7 @@ const Individual = ({
 
   return (
     <div
-      className={`relative rounded-2xl bg-[#282a2e] bg-gradient-to-b px-4 pb-4 pt-12 shadow-lg 
+      className={`relative rounded-2xl bg-[#282a2e] bg-gradient-to-b px-4 pb-4 pt-12 shadow-xl 
     ${gradient && `${gradient}`}
     `}
     >
@@ -45,7 +45,7 @@ const Individual = ({
           gradient ? "bg-black/30" : "bg-[#191A1C]"
         }`}
       >
-        <div className="p-4 pb-1 text-3xl font-semibold">
+        <div className="p-4 pb-1 text-3xl font-bold">
           {user[0]}
         </div>
         <div className="border-t border-gray-400"></div>
