@@ -97,7 +97,7 @@ const data2 = () => {
     {
       name: "iamDizzi (iam_dizzi)",
       role: "Graphic Designer",
-      about: ``,
+      about: `Crafting Visual Stories with Creativity and Passion`,
       social: {
         website: "https://umarfarooqdesignsz.dcms.site/",
         discord: "https://discordapp.com/users/871399361882492928",
